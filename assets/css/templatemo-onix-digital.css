@@ -1159,7 +1159,7 @@ Portfolio
 }
 
 .our-portfolio .item .thumb:hover .hover-effect {
-  bottom: 30px;
+  bottom: 15px;
 }
 
 .our-portfolio .item .thumb:hover img {
