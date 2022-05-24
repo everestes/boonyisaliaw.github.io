@@ -1110,9 +1110,7 @@ About
 }
 
 .about-us .fact-item p {
-  margin-top: 20px;
-  padding-top: 15px;
-  border-top: 1px solid #eee;
+  margin-right: 20px;
 }
 
 
@@ -1662,7 +1660,8 @@ contact
 .contact-left-dec img {
   position: absolute;
   z-index: 1;
-
+  width: 174px;
+  height: 319px;
   left: 0;
   top: 120px;
 }
