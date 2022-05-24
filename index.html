@@ -80,8 +80,23 @@ https://templatemo.com/tm-565-onix-digital
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  
+<!-- ***** Modal Cert. ***** -->
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-footer">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <img src="" class="imagepreview" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
 
+
+<!-- ***** Header Area End ***** -->
   <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
@@ -239,10 +254,10 @@ https://templatemo.com/tm-565-onix-digital
             </div>
             <div class="item">
               <h4>Design Thinking</h4>
-              <img src="assets/images/designthinking.jpg">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-              </button>
+              <a class="pop">
+                <img src="assets/images/designthinking.jpg">
+              </a>
+
               <p>Offered By Great Learning Academy</p>
             </div>
 
@@ -739,6 +754,14 @@ https://templatemo.com/tm-565-onix-digital
     <script src="assets/js/custom.js"></script>
 
     <script>
+
+      $(function () {
+        $('.pop').on('click', function () {
+          $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+          $('#imagemodal').modal('show');
+        });
+      });
+
       // Acc
       $(document).on("click", ".naccs .menu div", function () {
         var numberIndex = $(this).index();
@@ -758,7 +781,7 @@ https://templatemo.com/tm-565-onix-digital
       });
 
 
-      
+
     </script>
 </body>
 
