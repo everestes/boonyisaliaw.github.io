@@ -1774,6 +1774,21 @@ form#contact button:hover {
   background-color: #03a4ed;
 }
 
+/* 
+---------------------------------------------
+Pop Style
+--------------------------------------------- 
+*/
+.pop{
+  background:none;
+}
+
+.pop:hover{
+  background: #03a4ed;
+  filter: opacity(0.7) drop-shadow(0 0 0 #03a4ed); 
+}
+
+
 
 /* 
 ---------------------------------------------
